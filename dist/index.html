@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="heading">
+          <h1>AirQualityApp</h1>
+        </div>
+      </header>
+
+      <div class="search-box">
+        <input class="search-bar" type="text" />
+        <div class="btn search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+
+        <div class="btn gps-btn">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="result-container">
+        <div class="big-circle">
+          <div class="small-circle">
+            <div class="simple-result">Good</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="city-name-container"></div>
+        <div class="scroll">
+          <div class="scroll-part-container">
+            <div class="scroll-menu">
+              <div class="detailed-result">
+                <div class="detailed-heading aqi-index"></div>
+              </div>
+              <div class="detailed-result">
+                <div class="detailed-heading pm25"></div>
+              </div>
+              <div class="detailed-result">
+                <div class="detailed-heading pm10"></div>
+              </div>
+              <div class="detailed-result">
+                <div class="detailed-heading o3"></div>
+              </div>
+              <div class="detailed-result">
+                <div class="detailed-heading no2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

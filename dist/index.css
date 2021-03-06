@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #efefef;
+  background-color: #fcfcfc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  height: 94px;
+  background: linear-gradient(to right, #4f71e6, #7092ff);
+  box-shadow: 0 0 4px 5px #dedede;
+  position: relative;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4.3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  word-spacing: 1.5px;
+}
+
+.main-container {
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.search-box {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  border-radius: 8px;
+  box-shadow: 0 0 2px 1px #a1a1a181 inset;
+  height: 42px;
+  width: 170px;
+  border: none;
+}
+
+input {
+  padding-left: 20px;
+  font-size: 19px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: #739fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  box-shadow: 0 0 4px 1px #b1b1b1;
+  transition: box-shadow 0.4s;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.result-container {
+  margin: 45px auto 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.big-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6bd181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px 2px #dfdfdf;
+}
+
+.small-circle {
+  width: 94%;
+  height: 94%;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px #dfdfdf inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple-result {
+  color: #7092ff;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.city-name-container {
+  height: 80px;
+  border-radius: 13px;
+  width: 88%;
+  position: absolute;
+  bottom: 127px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #efefef;
+  background: linear-gradient(to right, #4f72e6c5, #7092ff);
+}
+
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.scroll-part-container {
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-top: 40px;
+  background-color:#efefef93;
+  padding-left: 14px;
+  box-shadow: 0 0 3px 2px #efefef;
+}
+
+.detailed-result {
+  margin: 20px 8px;
+  display: inline-block;
+  width: 110px;
+  height: 80px;
+  border-radius: 13px;
+  box-shadow: 0 0 5px 4px #dfdfdfad;
+  position: relative;
+  background-color: #739fff;
+}
+
+.detailed-heading {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600; 
+}
+
+
+/* height */
+
+
+@media only screen and (max-height: 634px) {
+  .city-name-container {
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+  }
+  .scroll {
+    position: relative;
+
+  }
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+  .app-container {
+    width: 1024px;
+    height: 768px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 4px #dfdfdfad;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header {
+    border-radius: 17px;
+  }
+
+  .city-name-container {
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+  }
+
+  .scroll {
+    position: relative;
+    text-align: center;
+  
+  }
+
+  .scroll-part-container {
+    border-radius: 17px;
+  }
+} 
