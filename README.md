@@ -32,7 +32,7 @@ npm run build
 
 ### Larger devices like desktops, laptops and tablets
 
-![larger devices pic](./readme_pics/air-quality-app-large devices.png)
+![larger devices pic](./readme_pics/air-quality-app-larger-devices.png)
 
 ### Smaller devices like small tables and smartphones
 
