@@ -2,6 +2,14 @@
 Just a practice and non-profit project for the Start2Impact web development course.
 The API I'm using is the one of [The World Air Quality Project](https://aqicn.org/api/).
 
+## How it works
+
+You have two ways to obtain data from the API:
+- Searching the city with the search bar
+- Simply pressing on the geolocation button
+
+Then you'll have a simple result in the middle of the screen and more details on the bottom (for smaller devices that is a scrollable section).
+
 ## How to build the app on your computer
 
 You should first install Webpack in your project directory with these two terminal commands:
