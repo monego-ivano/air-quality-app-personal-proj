@@ -27,3 +27,13 @@ And last, you should run this command in your terminal to make your local webpac
 ```
 npm run build
 ```
+
+## How does the app look like on your devices
+
+### Larger devices like desktops, laptops and tablets
+
+![larger devices pic](./readme_pics/air-quality-app-large devices.png)
+
+### Smaller devices like small tables and smartphones
+
+![smaller devices pic](./readme_pics/air-quality-app-smaller-devices.png)
