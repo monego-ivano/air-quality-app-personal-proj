@@ -20,11 +20,10 @@ npm install webpack webpack-cli --save-dev
 ```
 
 Then you should install the two libraries that I'm currently using for this project (Lodash and Jquery).
-You can do it with the commands:
+You can do it with the command:
 
 ```
-npm install --save lodash
-npm install jquery
+npm install
 ```
 
 Then you should add your personal token for the API to work correctly and insert it in an .env file,
